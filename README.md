@@ -1,3 +1,3 @@
 klsu@usc.edu
 
-https://uscwebdev.github.io/itp104-submissions-kelly-su/
+https://klsu.github.io/webdev-projects/
