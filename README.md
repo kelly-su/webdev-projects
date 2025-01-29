@@ -1,3 +1,3 @@
 klsu@usc.edu
 
-https://klsu.github.io/webdev-projects/
+https://kelly-su.github.io/webdev-projects/
