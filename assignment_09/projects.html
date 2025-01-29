@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kelly Su's digital portfolio, showcasing academic background, interests, and aspirations in product management and computer science.">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kelly Su's Personal Website</title>
+</head>
+<body>
+    <header>
+        <h1>Kelly Su's Personal Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h1>My Projects</h1>
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Cafe Finder Web App</h2>
+                            <p>An online web platform to discover and review cafes within the greater Los Angeles area.</p>
+                        </div>
+                        <div class="card-back">
+                            <img src="img/cafe.png" alt="Screenshot of the Cafe Finder Web App interface">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Fitness Tracker Calendar</h2>
+                            <p>A web-based app integrating AI for personalized fitness recommendations displayed in a weekly calendar format.</p>
+                        </div>
+                        <div class="card-back">
+                            <img src="img/fitness-tracker.png" alt="Screenshot of the Fitness Tracker Calendar App interface">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Weather App</h2>
+                            <p>A Java-based application that reads and manipulates weather data from JSON files.</p>
+                        </div>
+                        <div class="card-back">
+                            <img src="img/weather.png" alt="Screenshot of the Weather App interface showing current conditions">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Kelly Su. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('flipped');
+            });
+        });
+    </script>
+</body>
+</html>

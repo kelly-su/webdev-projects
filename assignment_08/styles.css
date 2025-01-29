@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #1d3557;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #3a7ca5;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #f5f1e3;
+}
+
+/* Navigation Styles */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #f5f1e3;
+    background-color: #1d3557;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+    background-color: #f5f1e3;
+    color: #1d3557;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f1e3;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #3a7ca5;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #1d3557;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlights Section */
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+.highlight {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.highlight h3 {
+    color: #3a7ca5;
+}
+
+.highlight a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #3a7ca5;
+    color: #f5f1e3;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.highlight a:hover {
+    background-color: #1d3557;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d3557;
+    color: #f5f1e3;
+    margin-top: 30px;
+}
+
+footer .social-links a {
+    color: #f5f1e3;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight {
+        width: 90%;
+    }
+}

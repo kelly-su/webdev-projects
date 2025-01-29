@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Photo Gallery - Cafe Hopping</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-header {
+            background-image: url('img/gallery.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery-header h1 {
+            font-size: 2.5em;
+            background-color: rgba(50, 50, 50, 0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        
+        .gallery-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            grid-gap: 10px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery-item.square {
+            height: 150px;
+        }
+
+        .gallery-item.rectangle {
+            grid-column: span 2; 
+            height: 150px; 
+        }
+
+        .gallery-item.triangle-bottom-right {
+            grid-column: span 3;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header class="gallery-header">
+        <h1>Cafe Hopping Photo Gallery</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="gallery-content">
+
+        <div class="gallery-item square"></div>
+        <div class="gallery-item square"></div>
+        <div class="gallery-item rectangle"></div>
+        <div class="gallery-item square"></div>
+        <div class="gallery-item square"></div>
+
+        <div class="gallery-item rectangle"></div>
+        <div class="gallery-item square"></div>
+        <div class="gallery-item square"></div>
+        <div class="gallery-item square"></div>
+        <div class="gallery-item rectangle"></div>
+
+        <div class="gallery-item square"></div>
+        <div class="gallery-item square"></div>
+        <div class="gallery-item square"></div>
+    </div>
+
+    <footer>
+        <p>&copy; Cafe Hopping Adventures</p>
+    </footer>
+</body>
+</html>

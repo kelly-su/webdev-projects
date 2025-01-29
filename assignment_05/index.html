@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cafe Hopping</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .content p, .content h2 {
+            color: #333; 
+        }
+
+        .sidebar figure {
+            position: relative;
+            display: inline-block;
+        }
+
+        .sidebar img {
+            width: 100%; 
+            max-width: 350px; 
+            height: auto;
+            display: block;
+        }
+
+        .sidebar figure figcaption {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-style: italic;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+
+        .sidebar figure:hover figcaption {
+            display: block;
+        }
+
+        .content img {
+            float: left;
+            margin-right: 10px;
+            width: 40%;
+            max-width: 300px;
+            height: auto; 
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .sidebar img {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cafe Hopping</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="content">
+            <section>
+                <h2>Why I Love Cafe Hopping</h2>
+                <p>Cafe hopping allows me to explore new spaces, enjoy different atmospheres, and discover new flavors around the USC area. Whether it’s finding a hidden gem with an artisanal brew or experiencing the distinct vibe of each cafe, I love how each visit feels like a mini-adventure. It’s also a fantastic way to support local businesses while enjoying quality time with friends or catching up on some work.</p>
+                <p>I personally love trying out new cafes to taste their signature drinks, as well as bringing a friend along to study or collaborate on projects. There’s something comforting about being in a warm, inviting space with the aroma of freshly brewed coffee, whether I’m looking for inspiration, focusing on classwork, or just having a laid-back conversation.</p>
+            </section>
+
+            <section>
+                <h2>How to Plan the Perfect Cafe Date</h2>
+                <p>If it’s your first time searching for cafes, I highly recommend checking out <a href="https://www.yelp.com" target="_blank">Yelp</a> or <a href="https://maps.google.com" target="_blank">Google Maps</a>. These platforms let you explore menus, see photos of the space, and review important details such as location, ambiance, seating options, and parking availability. Reviews provide insights into what drinks or dishes are popular and give you a sense of what other customers love or avoid.</p>
+                <p>For USC students, there’s no shortage of accessible cafe options! While a few cafes are within walking distance of campus, many of the more popular spots are located in Koreatown. If you have a car, it’s about a 20-30 minute drive depending on traffic, though street parking might be required. Alternatively, the Metro is a great option for getting from campus to Koreatown. It’s a convenient way to explore new cafes whenever you have some downtime between classes.</p>
+            </section>
+
+            <section>
+                <h2>Favorite Cafes and What to Try</h2>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);">
+                        <h3 style="margin-bottom: 5px;"><strong>Best Drinks: DAMO</strong></h3>
+                        <p style="margin: 0;">Known for its premium matcha and expertly crafted coffee and tea. The cafe is very aesthetic, though seating is limited due to its growing popularity.</p>
+                        <p style="margin: 5px 0 0 0;"><em>Must try:</em> Latte einspanner and matcha latte.</p>
+                    </div>
+            
+                    <div style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);">
+                        <h3 style="margin-bottom: 5px;"><strong>Best Studyability: COIN DE RUE Bakery and Cafe</strong></h3>
+                        <p style="margin: 0;">This cozy spot offers ample seating and a delicious array of baked goods.</p>
+                        <p style="margin: 5px 0 0 0;"><em>Must try:</em> Black sesame latte and red bean pastry.</p>
+                        <p style="margin: 5px 0 0 0;">*The peaceful atmosphere makes it perfect for a productive study session.</p>
+                    </div>
+            
+                    <div style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);">
+                        <h3 style="margin-bottom: 5px;"><strong>Best Ambiance: Coffee MCO</strong></h3>
+                        <p style="margin: 0;">With a spacious interior and charming outdoor seating, Coffee MCO is ideal for relaxation or work.</p>
+                        <p style="margin: 5px 0 0 0;"><em>Must try:</em> Mason latte and various food menu items.</p>
+                        <p style="margin: 5px 0 0 0;">*They have a dedicated parking lot, which is rare in Koreatown!</p>
+                    </div>
+                </div>
+                <p>The cafe scene in Los Angeles is ever-evolving, so there’s always something new to experience. Whether you’re looking for the best drinks, study spots, or just a place with great vibes, there’s something for everyone around the LA area!</p>
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <figure>
+                <img src="img/keicoffee.jpg" alt="Study Cafe Vibes">
+                <figcaption>Study Cafe Vibes</figcaption>
+            </figure>
+            <figure>
+                <img src="img/damo.jpg" alt="Matcha Latte">
+                <figcaption>Matcha Latte & Latte Einspanner</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Cafe Hopping Adventures</p>
+    </footer>
+</body>
+</html>
